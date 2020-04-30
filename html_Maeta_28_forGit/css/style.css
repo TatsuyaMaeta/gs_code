@@ -1,0 +1,799 @@
+/* ここから下に記載していく */
+:root{
+    --content-head-title-margin: 50px auto 0;
+}
+
+/*------------------ ↓headerの記述 ------------------*/
+.head-wrapper{
+    /* background-color: pink; */
+    height: 80px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+
+    background-image: url(../img/head-bgimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 100;
+}
+
+.head-wrapper .head-logo{
+    height: 80%;
+    width: 80%;
+}
+
+
+.head-wrapper .head-logo a img{
+    height: 100%;
+    padding: 0 3% 0 3%;
+}
+/*  logo  */
+
+
+/* navigation bar */
+nav ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+nav ul a {
+    padding: 0 5px;
+    color: black;
+    text-decoration: none;
+    width: 85px;
+}
+
+/* ナビゲーションメニューを右から３％離す */
+.head-wrapper .head-nav{
+    padding-right: 5%;
+}
+.nav-bar-details{
+    color: white;
+    font-size: 14px;
+    width: 120px;
+    height: 48px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.sp_barger_menu{
+    display: none;
+}
+
+
+@media screen and (max-width: 599px) {
+    nav ul a {
+        padding: 0 3%;
+        /* color: black;
+        text-decoration: none; */
+        width: 60px;
+    }
+
+    .nav-bar-details{
+        font-size: 12px;
+        width: 75px;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+    .sp_barger_menu{
+        display: block;
+    }
+    .nav-bar-details{
+        display: none;
+    }
+    .head-wrapper{
+        height: 60px;
+    }
+
+    .btn-trigger{
+        display: block;
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        width: 30px;
+
+        z-index: 100;
+
+        /* ボタンタグに初期値で設定されているCSSをリセット */
+        appearance: none;
+        -webkit-appearance:none;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        box-shadow: none;
+        outline: none;
+        -webkit-tap-highlight-color: rgb(0, 0, 0, 0);
+    }
+
+    /* .btn-trigger.activeは２つのクラスがくっついている状態
+        useタグに擬似クラスにて複数並列している中で()の番号のタグを操作
+    */
+    .btn-trigger.active use:nth-of-type(1){
+        /* 回転させて、少し動かす */
+        transform: translateY(30px) rotate(-45deg);
+    }
+    .btn-trigger.active use:nth-of-type(2){
+        /* 透過させて消す */
+        opacity: 0;
+    }
+    .btn-trigger.active use:nth-of-type(3){
+        /* 回転させて、少し動かす */
+        transform: translateX(35px) translateY(-15px) rotate(45deg);
+    }
+
+    .navigation{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(164, 207, 240, 0.8);
+    }
+    .sp_nav_list{
+        display: block;
+        padding: 70px 0 0;
+    }
+    .sp_nav_item{
+        margin: 0 0 35px;
+    }
+    .sp_nav_item a{
+        color: white;
+        font-weight: bold;
+    }
+
+    .sp_nav_item>a{
+        /* display: block; */
+        font-size: 1.1rem;
+    }
+
+}
+/*------------------ ↑headerの記述 ------------------*/
+
+/*------------------ ↓big-content-wrapperの記述 ------------------*/
+
+.body-wrapper .bgi{
+    background-image: url("../img/bgimg2.jpg") ;   
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    height: 350px;
+    
+    text-align: right;
+    font-size: 24px;
+    /* padding: 80px 10vw 0 0; */
+    margin-top: -40px;
+}
+.bgi .main-title{
+    margin-top: 40px;
+    padding: 141px 10% 0 0;
+    /* margin-right: 10px; */
+}
+.bgi .sub-title{
+    padding: 20px 8% 0 0;
+    vertical-align: bottom;
+}
+
+.big-content-wrapper{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    margin: 10px 3% 10px 3%;
+    /* background-color: darkgoldenrod; */
+
+}
+
+    /*------------------ ↓main-wrapperの記述 ------------------*/
+    .main-wrapper{
+        /* background-color: greenyellow; */
+        width: 72%;
+    }
+
+    .space-tag{
+        /* ページ内リンクがヘッダ固定によりちゃんと出ない時の調整コード */
+        margin-top: 100px;
+        padding-top: -100px;
+        /* ページ内リンクがヘッダ固定によりちゃんと出ない時の調整コード */
+    }
+
+        /*------------------ ↓#main-firstの記述 ------------------*/
+        #main-first{
+            /* background-color: burlywood; */
+            padding: 50px auto 100px auto;
+            text-align: center;
+            padding: 5px 3%;
+            line-height: 1.4rem;
+                /* ページ内リンクがヘッダ固定によりちゃんと出ない時の調整コード */
+                margin-top:-90px;
+                padding-top:90px;
+                /* ページ内リンクがヘッダ固定によりちゃんと出ない時の調整コード */
+        }
+
+        .title-about-radio{
+            padding:0 0 20px;
+            margin: var(--content-head-title-margin);
+            font-weight: bold;
+            font-size: 1.6rem;
+        }
+        /* #main-first p.txt-about-radio{ */
+            /* text-align: justify; */
+        /* } */
+
+
+        /*------------------ ↑#main-firstの記述 ------------------*/
+
+
+        /*------------------ ↑#main-secondの記述 ------------------*/
+        #main-second{
+            /* background-color: white; */
+            padding: 20px 1%;
+            text-align: center;
+
+                /* ページ内リンクがヘッダ固定によりちゃんと出ない時の調整コード */
+                margin-top:-80px;
+                padding-top:80px;
+                /* ページ内リンクがヘッダ固定によりちゃんと出ない時の調整コード */
+
+        }
+
+        /* 画像用のタイトル */
+        #main-second .radio-title{
+            margin-bottom: 10px
+        }
+
+        .second-flex-content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: -5px auto ;
+        }
+
+
+        .favorite-radio-title{
+            padding:0 0 20px;
+            margin: var(--content-head-title-margin);
+            font-weight: bold;
+            font-size: 1.6rem;
+        }
+
+        #main-second .second-flex-content .radio-img,
+        #main-second .second-flex-content .rafio-intro{
+            width: 200px;
+            background-color: rgb(222, 220, 220);
+        }
+        .radio-intro ul{
+            width: 200px;
+            height: 200px;
+
+            background-color:rgb(222, 220, 220);
+        }
+        .radio-intro ul li p{
+            margin: 0px auto;
+        }
+
+        /* イメージサイズ調整 */
+        #main-second .second-flex-content li a img{
+            width: 100%;
+            height: 200px;
+            /* ここの指定を格納タグの高さ設定と合わせることで画像枠に原寸の縦横比を守ったまま反映できる */
+            object-fit: cover;
+        }
+
+        .radio-intro .radio-title{
+            font-size: 14px;
+            font-weight: bold;
+            padding: 15px 3% 0;
+        }
+
+        .radio-intro .radio-txt{
+            font-size: 8px;
+            padding: 0 5% 0;
+            line-height: 0.75rem;
+            /* font-weight: bold; */
+        }
+
+        .radio-img a{
+            padding-bottom: -6px;
+        }
+
+        @media screen and (max-width: 680px) {
+            .second-flex-content{
+                display: block;
+            }
+            #main-second ul .radio-img,
+            #main-second ul .radio-intro{
+                text-align: center;
+                margin: 0 auto;
+            }
+            #main-second ul .radio-intro ul{
+                margin: 0 auto;
+            }
+            .radio-img.even a img{
+                padding: 0 0 200px;
+                margin: -200px 0 0;
+            }
+            .second-flex-content .even ul {
+                padding: 0 0 -200px;
+                margin: 0 0 200px;
+            }
+            .radio-intro.even ul li .radio-title.even{
+                padding: 210px 0 0;
+                margin: 0 0 -200px;
+            }
+            /* ul li p.radio-title.even{
+
+            } */
+            .even ul li p.radio-txt{
+                padding: 5px 3% 0;
+                margin: 0px 0 0;
+            }
+        }
+
+        /*------------------ ↑#main-secondの記述 ------------------*/
+
+
+        /*------------------ ↓#main-thirdの記述 ------------------*/
+        #main-third{
+            /* background-color: violet; */
+        
+                        /* ページ内リンクがヘッダ固定によりちゃんと出ない時の調整コード */
+                        margin-top:-100px;
+                        padding-top:100px;
+                        /* ページ内リンクがヘッダ固定によりちゃんと出ない時の調整コード */
+        }
+        
+        .recommend-title{
+            text-align: center;
+            margin: var(--content-head-title-margin);
+            font-weight: bold;
+            font-size: 1.6rem;
+            padding: 40px 0 10px;
+        }
+
+        #main-third ul{
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+        }
+        #main-third ul a li{
+            width: 118px;
+            height: 118px;
+            
+        }
+
+        #main-third ul a li img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: 1px solid #000;
+        }
+
+        #nippon{
+            margin: 25px 0 5px;
+        }
+        #tbs{
+            margin: 25px 0 5px;
+        }
+        #other{
+            margin: 25px 0 5px;
+        }
+        .station-list1,
+        .station-list2,
+        .station-list3{
+            margin-bottom: 10px;
+            height: 128px;
+            
+        }
+
+        /* 画面サイズに合わせてアイコンのサイズを変更 */
+        /* 枠線の1px*2分を引いて98,78px に設計 */
+        /* @media screen and (max-width: 1080px ) {
+            #main-third ul a li{
+                width: 108px;
+                height: 108px;
+            }
+        } */
+        @media screen and (max-width: 900px) {
+            #main-third ul a li{
+                width: 88px;
+                height: 88px;
+            }
+        }
+        @media screen and (max-width: 720px) {
+            #main-third ul a li{
+                width: 58px;
+                height: 58px;
+            }
+        }
+        @media screen and (max-width: 540px) {
+            #main-third ul a li{
+                width: 48px;
+                height: 48px;
+            }
+        }
+
+        #main-third ul a li img:hover{
+            opacity: 0.7;
+        }
+        /*------------------ ↑#main-thirdの記述 ------------------*/
+
+        /*------------------ ↑#main-fourthの記述 ------------------*/
+        #main-fourth{
+            /* background-color: darkgreen; */
+
+            /* ページ内リンクがヘッダ固定によりちゃんと出ない時の調整コード */
+            margin-top:-70px;
+            padding-top:70px;
+            /* ページ内リンクがヘッダ固定によりちゃんと出ない時の調整コード */
+        }
+        .live-spot-title{
+            text-align: center;
+            margin: var(--content-head-title-margin);
+            font-weight: bold;
+            font-size: 1.6rem;
+            padding: 40px 0 10px;
+        }
+
+        #main-fourth p{
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        #main-fourth .address-details{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0 auto 20px;
+            
+        }
+
+        #main-fourth .address-details .address-txt{
+            text-align: left;
+            padding-right: 20px;
+        }
+
+        #main-fourth .address-details .address-map{
+            width: 400px;
+            height: 300px;
+            padding-right: 10%;
+        }
+        #main-fourth .address-details .address-map iframe{
+            width: 100%;
+            height: 100%;
+            }
+
+        /* @media screen and (min-width: 940px) {
+            #main-third ul a li{
+                width: 140px;
+                height: 140px;
+            }
+        }
+
+        @media screen and (max-width: 720px) {
+            #main-third ul a li{
+                width: 60px;
+                height: 60px;
+            }
+        }
+        @media screen and (max-width: 540px) {
+            #main-third ul a li{
+                width: 50px;
+                height: 50px;
+            }
+        } */
+        /*------------------ ↑#main-fourthの記述 ------------------*/
+
+
+        /*------------------ ↑#main-fifthの記述 ------------------*/
+        #main-fifth{
+            /* background-color: steelblue; */
+
+            /* ページ内リンクがヘッダ固定によりちゃんと出ない時の調整コード */
+            margin-top:-60px;
+            padding-top:60px;
+            /* ページ内リンクがヘッダ固定によりちゃんと出ない時の調整コード */
+        }
+        .recommend-title{
+            text-align: center;
+            margin: var(--content-head-title-margin);
+            font-weight: bold;
+            font-size: 1.6rem;
+        }
+
+        #main-fifth form{
+            margin: 30px auto;
+            padding: 30px 0;
+        }
+
+        #main-fifth form table {
+            margin: 0 auto;
+            width: 75%;
+        }
+
+        #main-fifth form table tr th{
+            padding: 20px 15px 20px 0;
+            width: 50%;
+        }
+
+        #main-fifth form table tr td{
+            padding: 20px 0 20px 15px;
+            /* text-align: center; */
+            width: 50%;
+        }
+
+        #id, #old, #mail, #name ,#kana-name{
+            width: 150px;
+        }
+        /* 年代 */
+        #old option div{
+            margin: 0 auto;
+        }
+        textarea {
+            resize: vertical;
+            width: 149px;
+        }
+
+        table tr th .submit{
+            padding: 5px 60px;
+        }
+
+        #table-title{
+            font-size: 24px;
+        }
+
+        #inquiry-cell7_1{
+            padding-bottom: 50px;
+        }
+
+            /* アコーディオンチェックボックス */
+            /* https://codepen.io/takanorip/pen/grZpOp */
+            .inquiry-favorite {
+                max-width: 140px;
+                margin: 0 auto;
+                padding: 0;
+                vertical-align: baseline;
+                font-size: 0.5rem;
+            }
+            
+            .inquiry-favorite a {
+                display: block;
+                padding: 10px;
+                text-decoration: none;
+                color: #000;
+                line-height: 1;
+            }
+            
+            .inquiry-favorite  .each-channel {
+                display: block;
+                margin: 0 0 1px 0;
+                padding :4px;
+                line-height: 0.8;
+                color :#fff;
+                background :#007bbb;
+                cursor :pointer;
+                /* margin: 10px 0 0 0; */
+            }
+            
+            .inquiry-favorite #inquiry-menu_bar01,
+            .inquiry-favorite #inquiry-menu_bar02,
+            .inquiry-favorite #inquiry-menu_bar03,
+            .inquiry-favorite #inquiry-menu_bar04,
+            .inquiry-favorite #inquiry-menu_bar05 {
+                display: none;
+            }
+            
+            .inquiry-favorite ul {
+                margin: 0;
+                padding: 0;
+                background :#f4f4f4;
+                list-style: none;
+                text-align: center;
+                width: 155px;
+            }
+            
+            .inquiry-favorite li {
+                max-height: 0;
+                overflow-y: hidden;
+                -webkit-transition: all 0.5s;
+                -moz-transition: all 0.5s;
+                -ms-transition: all 0.5s;
+                -o-transition: all 0.5s;
+                transition: all 0.5s;
+
+                width: 100%;
+                text-align: left;
+            }
+
+            .inquiry-favorite-details,
+            .inquiry-favorite ul li label {
+                cursor: pointer;
+            }
+            
+            #inquiry-menu_bar01:checked ~ #inquiry-links01 li,
+            #inquiry-menu_bar02:checked ~ #inquiry-links02 li,
+            #inquiry-menu_bar03:checked ~ #inquiry-links03 li,
+            #inquiry-menu_bar04:checked ~ #inquiry-links04 li,
+            #inquiry-menu_bar05:checked ~ #inquiry-links05 li {
+                max-height: 36px;
+                opacity: .6;
+            }
+            /* ボタン一つでオールチェックできる仕組みを入れたい */
+            /* ↑アコーディオンチェックボックス */
+
+            table .submit{
+                width: 30vw;
+                height: 40px;
+                font-size: 1rem;
+            }
+
+            #main-fifth form table tr .form-cell-left{
+                border-top: solid 1px #bfbfbf;
+                border-right: solid 1px #bfbfbf;;
+            }
+            #main-fifth form table tr .form-cell-right{
+                border-top: solid 1px #bfbfbf;
+                border-left: solid 1px #bfbfbf;;
+            }
+
+            @media screen and (max-width: 500px) {
+                table tr th .submit{
+                    padding: 0 10px 0;
+                    font-size: 1rem;
+                }
+                #id, #old, #mail, #name ,#kana-name{
+                    width: 98%;
+                }
+
+                textarea {
+                    resize: vertical;
+                    width: 97%;
+                }
+                .inquiry-favorite ul {
+                    width: 100%;
+                }
+                /* .form-cell-right label{
+
+                } */
+            }
+
+        /*------------------ ↑#main-fifthの記述 ------------------*/
+
+    /*------------------ ↑.main-wrapperの記述 ------------------*/
+
+    /*------------------ ↓.aside-wrapperの記述 ------------------*/
+    .aside-wrapper{
+        /* background-color: brown; */
+        margin: 10px;
+        width: 24%;
+    }
+    
+    /* https://codepen.io/takanorip/pen/grZpOp */
+    .side-menu {
+        max-width: 280px;
+        margin: 0 auto;
+        padding: 30px 0 0 0 ;
+        vertical-align: baseline;
+    }
+    
+    .box_one a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #000;
+        line-height: 1;
+        font-size: 13px;
+    }
+    
+    .side-menu label {
+        display: block;
+        margin: 0 0 2px 0;
+        padding :12px;
+        line-height: 1;
+        color :#fff;
+        background :#007bbb;
+        cursor :pointer;
+        margin: 10px 0 5px;
+    }
+    
+    .side-menu input {
+        display: none;
+    }
+    
+    .side-menu ul {
+        margin: 0;
+        padding: 0;
+        background :#f4f4f4;
+        list-style: none;
+    }
+    
+    .side-menu li {
+        max-height: 0;
+        overflow-y: hidden;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+    
+    #side-menu_bar01:checked ~ #links01 li,
+    #side-menu_bar02:checked ~ #links02 li,
+    #side-menu_bar03:checked ~ #links03 li,
+    #side-menu_bar04:checked ~ #links04 li,
+    #side-menu_bar05:checked ~ #links05 li {
+        max-height: 46px;
+        opacity: 1;
+    }
+    .sticky {
+        position: -webkit-sticky ;
+        position: sticky;
+        top: 80px;
+    }
+
+    @media screen and (max-width: 480px) {
+        .side-menu label {
+            font-size: 10px;
+            padding :12px;
+            line-height: 0.5;
+        }
+        .side-menu ul li {
+            height: 160x;
+        }
+        .side-menu ul li a{
+            font-size: 7px;
+            line-height: 1;
+            padding: 6px auto;
+        }
+
+    }
+    /*------------------ ↓aside-wrapperの記述 ------------------*/
+
+
+
+/*------------------ ↑big-content-wrapperの記述 ------------------*/
+
+
+
+
+
+
+/*------------------ ↓footerの記述 ------------------*/
+footer{
+    background-color: #707070;
+    /* text-align: center; */
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-wrapper p{
+    font-size: 0.75rem;
+    margin: o auto;
+}
+
+.footer-wrapper p small{
+    font-size: 1.25rem;
+}
+
+.footer-wrapper .to-pagetop{
+    width: 20px;
+    height: 20px;
+}
+.footer-wrapper .to-pagetop img{
+
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    transition: 5s;
+    opacity: 0.6;
+}
+/*------------------ ↑footerの記述 ------------------*/

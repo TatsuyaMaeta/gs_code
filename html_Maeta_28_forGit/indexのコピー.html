@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- 最初の設定は終わっています　必要な方は触ってください -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>あなたのクリエイティブを刺激する ~ラジオの世界~</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon-icon.ico">
+
+  <!-- jQueryの記述 -->
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <!-- jQueryの記述 -->
+
+</head>
+<!-- 最初の設定は終わっています　必要な方は触ってください -->
+
+
+<body class="body-wrapper">
+  <!-- この中に記述していく -->
+  <!-- ここから下にコードを書く -->
+
+  <!-- ↓ヘッダーの内容を記述 -->
+  <header class="head-wrapper">
+    <div class="head-logo" id="head-logo">
+      <a href="#bgi" class="link-anchor"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS3si9PbOLWq2KWUoRLci746pyc6u-scWRoHH9Hs6mD-JCoowbT&usqp=CAU" alt=""></a>
+      <!-- <img src="img/head-bgimg.jpg" alt=""> -->
+      <!-- <div>令和ラジオの世界</div>  -->
+    </div>
+
+    <!-- nav>(a>li)*4 -->
+    <nav class="head-nav">
+      <ul>
+        <a href="#main-first" class="link-anchor">
+          <li class="nav-bar-details">About</li>
+        </a>
+        <a href="#main-second">
+          <li class="nav-bar-details">My History</li>
+        </a>
+        <a href="#main-third">
+          <li class="nav-bar-details">Reccomend</li>
+        </a>
+        <a href="#main-fourth">
+          <li class="nav-bar-details">Live Spot</li>
+        </a>
+
+        <a href="#main-fifth" class="link-anchor">
+          <li class="nav-bar-details">Inquiry</li>
+        </a>
+      </ul>
+    </nav>
+
+    <!-- ハンバーガーメニュー -->
+    <!-- 背景色RGB (164, 207, 240)  button class = active ←これを入れるとバーガーメニューが×になる-->
+    <div class="sp_barger_menu">
+      <button class="btn-trigger ">
+        <svg viewBox= "0 0 44 44" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-labelledby="menuButtonTitle">
+              <title id="menuButtonTitle">Menu</title>
+                <symbol id="bar">
+                  <rect width="28" height="2" fill="#f0f0f0"></rect>
+                </symbol>
+                <use xlink:href="#bar" x="8" y="14"></use>
+                <use xlink:href="#bar" x="8" y="24"></use>
+                <use xlink:href="#bar" x="8" y="34"></use>
+              </svg>
+      </button>
+      <nav class="navigation">
+        <ul class="sp_nav_list">
+          <li class="sp_nav_item"><a href="#main-first">About</a></li>
+          <li class="sp_nav_item"><a href="">My history</a></li>
+          <li class="sp_nav_item"><a href="">Recommend</a></li>
+          <li class="sp_nav_item"><a href="">Live Spot</a></li>
+          <li class="sp_nav_item"><a href="">Inquiry</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ↑ヘッダーの内容を記述 -->
+  <p class="bgt"></p>
+  <div class="bgi" id="bgi">
+    <p class="main-title">聴けば見えてくる</p>
+    <div class="sub-title">~ただ好きなラジオ~</div>
+  </div>
+
+  <div class="big-content-wrapper">
+
+    <!-- ↓メインのコンテンツを記述 -->
+
+    <main class="main-wrapper">
+      
+      <!-- ラジオについて -->
+      <div class="space-tag"></div>
+      <div id="main-first">
+        <p class="title-about-radio">ラジオについて</p>
+        <p class="txt-about-radio">ラジオとは聴覚のみで情報取得できるメディアの種類である</p>
+        <p class="txt-about-radio">テレビ、ネットなどのメディアでは視覚、聴覚の情報が豊富で、昨今ではネットメディアの情報量は圧倒的に多く、適切な取捨選択も困難なほどである。</p>
+        <p class="txt-about-radio">人間の五感(視覚、聴覚、嗅覚、触覚、味覚)の中で視覚における情報取得量が圧倒的に多い。なんと約83%にも及ぶ(<a href="https://www2.gsis.kumamoto-u.ac.jp/~info/2004_2/works/g031a081/exe.pdf">※１</a>)注いで２番目に多い情報とされている</p>
+        <p class="txt-about-radio">視覚に次いで情報取得量が多い器官が7%で聴覚になる。この時、視覚の情報取得を遮断し、聴覚に情報取得を集中させたとするとどうだろうか？
+          視覚情報処理で使用していた脳のメモリを聴覚に割り当てることができる。すると、自身のイマジネーションにより視覚情報を自身で補完するように頭が働き、
+          取得した情報から派生した豊かな情報がもたらされる。是非皆様にもラジオを活用し、創造性の育成に役立てていただきたい。</p>
+        <p class="txt-about-radio">ただし、今回紹介するラジオ番組は深夜帯のラジオが多く、内容が万人におすすめするには憚られる物もあることを御留意願いたい。</p>
+      </div>
+
+
+      <div class="space-tag"></div>
+      <!-- お気に入りラジオ変遷 -->
+      <div id="main-second">
+        <h2 class="favorite-radio-title">＝お気に入りのラジオ変遷＝</h2>
+
+        <!-- １つ目 -->
+        <ul class="second-flex-content">
+          <li class="radio-img odd"><a href="https://news.1242.com/article/178604" target="_blank"><img src="https://smlycdn.akamaized.net/data/product2/2/b91e59b5de28da5cfde7f45ad6bd5ab1b687a273_l.jpg" alt="aikoのオールナイトニッポン"></a></li>
+          <li class="radio-intro odd">
+              <ul>
+                <li><p class="radio-title">aikoのオールナイトニッポン<br>(現在終了)</p></li>
+                <li><p class="radio-txt">元々ファンクラブ(FC)に入っていた程好きだった。過去にFCに入ったことのあるアーティストは先にも後にもaikoだけである。<br>
+                    当時の会報でラジオをやっている事を知り、そこから拝聴するようになった。<br>
+                    メール投稿は何度かしたことがあったが、読まれたことはまだない。                    
+                    現在は自身でもラジオ番組を他局にて放送しており、ANNへは岡村隆史、King Ghu井口の番組にしばしば出演するあり。
+                  </p></li>
+              </ul>  
+          </li>       
+        </ul>
+
+        <!-- ２つ目 -->
+        <ul class="second-flex-content">
+          <li class="radio-intro even">
+            <ul>
+              <li><p class="radio-title even">爆笑問題の<br>爆笑問題カーボーイ</p></li>
+              <li><p class="radio-txt even">放送開始から23年、現在もTBSラジオで毎週火曜25時~ 2時間放送している。<br>
+                  しょうもない話題から政治、経済、文学、時事と話題の幅広く、聴いていて飽きない。<br>
+                  テレビだと太田の言動がクレイジーのように映るが、ラジオではその様相はなく、むしろ田中の狂気が爆発している。<br>
+                  番組内ではフリートーク、ネタコーナーは50:50だが、コーナーの中でCD田中が一番のオススメである。
+                </p></li>
+            </ul>  
+          </li> 
+          <li class="radio-img even"><a href="https://www.tbsradio.jp/bakusho/" alt="爆笑問題の爆笑問題カーボーイ"><img src="http://www.tbsradio.jp/bakusho/300_300.jpg" alt="爆笑問題の爆笑問題カーボーイ"></a></li>
+        </ul>
+
+        <!-- ３つ目 -->
+        <ul class="second-flex-content">
+          <li class="radio-img odd"><a href="http://www.allnightnippon.com/ariue/img/main_pic.jpg" alt="くりーむしちゅーのオールナイトニッポン"><img src="http://www.allnightnippon.com/ariue/img/main_pic.jpg" alt="くりーむしちゅーのオールナイトニッポン"></a></li>
+          <li class="radio-intro odd">
+              <ul>
+                <li><p class="radio-title">くりーむしちゅーの<br>オールナイトニッポン<br>(現在終了)</p></li>
+                <li><p class="radio-txt">過去のオールナイトニッポンの中でもかなりの人気を誇ったくりーむしちゅー<br>
+                  喋りはじめはお決まりのフレーズがあり、『いや、まいったね』である。<br>  
+                  番組前半でのフリートーク中に月に1度だけある有田から上田へのムチャぶりトークが最高に面白い。
+                  くりーむしちゅーのラジオは終わってすでに12年経つが、アーカイブにしてあり今だに神回を聞き返すことがある。
+                </p></li>
+              </ul>  
+          </li>       
+        </ul>
+
+        <!-- ４つ目 -->
+        <ul class="second-flex-content">
+          <li class="radio-intro even">
+            <ul>
+              <li><p class="radio-title even">オードリーの<br>オールナイトニッポン</p></li>
+              <li><p class="radio-txt even">現在のオールナイトニッポンのエースといえば私はオードリーだと思っている<br>
+                放送開始から11年目だが、今だ生放送でのフリートーク,特に若林のフリートークは最高に面白い。<br>
+                若林が実は結婚していた時の放送回は、１ヶ月前から存在しない奥さんが最近見えてきたという嘘に見せかけたフリをし続けていていたこともあり、
+                嘘かと思ったら本当だったというミステリーのような展開で、私の中では数あるうちの神回のひとつである。
+              </p></li>
+            </ul>  
+          </li> 
+          <li class="radio-img even"><a href="https://www.tbsradio.jp/bakusho/" alt="オードリーのオールナイトニッポン"><img src="https://images-na.ssl-images-amazon.com/images/I/814MjGOcPsL._AC_SY550_.jpg" alt="オードリーのオールナイトニッポン"></a></li>
+        </ul>
+
+        <!-- aiko(現在終了) - 爆笑問題　ー　くりーむしちゅ〜(現在終了)　ー　伊集院光　ー　オードリー　ー　エレ片 -->
+      </div>
+
+      <div class="space-tag"></div>
+      <!-- おすすめラジオ -->
+      <div id="main-third">
+        <h2 class="recommend-title">=現在放送中のおすすめラジオ=</h2>
+        <!-- おすすめラジオ -->
+        <!-- ul>(a>li>img)*6 -->
+        <p  id="nippon">=ニッポン放送=</p>
+        <ul class="station-list1">
+          <a href="https://www.allnightnippon.com/kw/" target="_blank" >
+            <li><img src="img/body-third/nippon/n-1.jpg" alt="オードリー"></li>
+          </a>
+          <a href="https://www.allnightnippon.com/sanshiro/" target="_blank">
+            <li><img src="img/body-third/nippon/n-2.jpg" alt="三四郎のオールナイトニッポン"></li>
+          </a>
+          <a href="https://www.allnightnippon.com/mizu/" target="_blank">
+            <li><img src="img/body-third/nippon/n-3.jpg" alt="水溜りボンドのオールナイトニッポンゼロ"></li>
+          </a>
+          <a href="https://www.allnightnippon.com/sakuma/" target="_blank">
+            <li><img src="img/body-third/nippon/n-4.jpg" alt="佐久間宣行のオールナイトニッポンゼロ"></li>
+          </a>
+          <a href="https://www.allnightnippon.com/creepynuts/" target="_blank">
+            <li><img src="img/body-third/nippon/n-5.jpg" alt="クリーピーナッツのオールナイトニッポンゼロ"></li>
+          </a>
+        </ul>
+
+
+        <p id="tbs">=TBSラジオ=</p>
+        <ul class="station-list2">
+          <a href="https://www.tbsradio.jp/ijuin/" target="_blank" >
+            <li><img src="img/body-third/tbs/t-1.jpg" alt="伊集院光の深夜の馬鹿力"></li>
+          </a>
+          <a href="https://www.tbsradio.jp/bakusho/" target="_blank">
+            <li><img src="img/body-third/tbs/t-2.jpg" alt="爆笑問題カーボーイ"></li>
+          </a>
+          <a href="https://www.tbsradio.jp/megane/" target="_blank">
+            <li><img src="img/body-third/tbs/t-3.png" alt="おぎやはぎのメガネびいき"></li>
+          </a>
+          <a href="https://www.tbsradio.jp/elekata/" target="_blank">
+            <li><img src="img/body-third/tbs/t-4.png" alt="エレ片のコント太郎"></li>
+          </a>
+          <a href="https://www.tbsradio.jp/tokyopod/" target="_blank">
+            <li><img src="img/body-third/tbs/t-5.jpg" alt="東京ポッド許可局"></li>
+          </a>
+          <a href="https://www.tbsradio.jp/giga/" target="_blank">
+            <li><img src="img/body-third/tbs/t-6.jpg" alt="うしろシティ　星のギガボディ"></li>
+          </a>
+        </ul>
+
+        <p id="other">=その他のラジオ局=</p>
+        <ul class="station-list3">
+          <a href="https://park.gsj.mobi/program/show/27400" target="_blank" >
+            <li><img src="img/body-third/other/jfn-1.jpg" alt="有吉弘行のサンデーナイトドリーマー"></li>
+          </a>
+          <a href="https://www.google.com/search?client=safari&rls=en&q=showroom%E4%B8%BB%E7%BE%A9&ie=UTF-8&oe=UTF-8" target="_blank">
+            <li><img src="img/body-third/other/tf-1.png" alt="SHOWROOM主義"></li>
+          </a>
+          <a href="https://twitter.com/waraimeshihour" target="_blank">
+            <li><img src="img/body-third/other/mbs-1.jpg" alt="小藪・笑い飯の土020"></li>
+          </a>
+          <!-- <a href="" target="">
+            <li><img src=" " alt=""></li>
+          </a> -->
+        </ul>
+      </div>
+
+
+      <div class="space-tag"></div>
+      <!-- アクセス -->
+      <div id="main-fourth">
+        <h2 class="live-spot-title">＝公開放送 所在地＝</h2>
+
+        <p>コロナが終わったら、TOKYO FMに公開収録を見に行こう！</p>
+
+        <div class="address-details">
+          <p class="address-txt">
+            〒１５０−０００１<br>
+            東京都渋谷区神宮前３−２５<br>
+            Backstage Café スタジオ
+          </p>
+          <div class="address-middle no-data"></div>
+          <div class="address-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202.57557965899733!2d139.70819108074375!3d35.67184870651264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d2d1fcc825b%3A0xad952e09dddd1dea!2sBackstage%20Caf%C3%A9!5e0!3m2!1sja!2sjp!4v1587744891621!5m2!1sja!2sjp"  
+              frameborder="0" 
+              style="border:none;" 
+              allowfullscreen="" 
+              aria-hidden="false" 
+              tabindex="0"
+              >
+            </iframe>
+          </div>
+        </div>
+          <!-- 東京FMは公開収録やってるのでそこを勧める -->
+      </div>
+
+
+      <div class="space-tag"></div>
+      <!-- お問い合わせ -->
+      <div id="main-fifth" class="link-anchor">
+
+        <!-- form>(tr>(th+td))*9 -->
+        <form action="">
+          <table>
+            <!--カラム結合 https://www.tagindex.com/html_tag/table/td_span.html -->
+            <tr><th colspan="2" id="table-title">　　＝お問い合わせ＝</th></tr>
+            <tr>
+              <th class="form-cell-left">氏名</th>
+              <td class="form-cell-right"><input type="text" name="" id="name"></td>
+            </tr>
+            <tr>
+              <th class="form-cell-left">カナ</th>
+              <td class="form-cell-right"><input type="text" name="" id="kana-name"></td>
+            </tr>
+            <tr>
+              <th class="form-cell-left">年代</th>
+              <td class="form-cell-right"><select name="older" id="old">
+                <option value="10代" checked="checked"><div>10代</div></option>
+                <option value="20代">20代</option>
+                <option value="30代">30代</option>
+                <option value="40代">40代</option>
+                <option value="50代">50代</option>
+                <option value="60代">60代</option>
+              </select></td>
+            </tr>
+            <tr>
+              <th class="form-cell-left">性別</th>
+              <td class="form-cell-right"><label for="male"><input type="radio" name="gender" id="male"  value="男性">男性</label>　<label for="female"><input type="radio" name="gender" id="female"  value="女性">女性</label></td>
+            </tr>
+            <tr>
+              <th class="form-cell-left">メールアドレス</th>
+              <td class="form-cell-right"><input type="text" name="mail" id="mail" value=""></td>
+            </tr>
+            <tr>
+              <th class="form-cell-left">あなたの気になったラジオ</th>
+              <td class="inquiry-favorite form-cell-right">
+                <ul>
+                  <!-- -----------ニッポン放送------------------------------------------------------------------------------------------------------------------------ -->
+                  <label for="inquiry-menu_bar01" class="each-channel">ニッポン放送</label>
+                  <input type="checkbox" id="inquiry-menu_bar01" class="accordion" />
+                  <ul id="inquiry-links01">
+                    <li><label for="checkbox-1-1"><input type="checkbox" class="inquiry-favorite-details" id="checkbox-1-1">オードリー ANN</label></li>
+                    <li><label for="checkbox-1-2"><input type="checkbox" class="inquiry-favorite-details" id="checkbox-1-2">三四郎 ANN</label></li>
+                    <li><label for="checkbox-1-3"><input type="checkbox" class="inquiry-favorite-details" id="checkbox-1-3">水溜りボンド ANN</label></li>
+                    <li><label for="checkbox-1-4"><input type="checkbox" class="inquiry-favorite-details" id="checkbox-1-4">佐久間宣行 ANN0</label></li>               
+                    <li><label for="checkbox-1-5"><input type="checkbox" class="inquiry-favorite-details" id="checkbox-1-5">creepy nuts ANN0</label></li> 
+                  </ul>
+                  <!-- -----------ニッポン放送------------------------------------------------------------------------------------------------------------------------ -->
+
+
+                  <!-- -----------TBS ラジオ------------------------------------------------------------------------------------------------------------------------ -->
+                  <label for="inquiry-menu_bar02" class="each-channel">TBSラジオ</label>
+                  <input type="checkbox" id="inquiry-menu_bar02" class="accordion" />
+                  <ul id="inquiry-links02">
+                    <li><label for="checkbox-2-1"><input type="checkbox" class="inquiry-favorite-details" id="checkbox-2-1">伊集院光の深夜の馬鹿力</label></li>
+                    <li><label for="checkbox-2-2"><input type="checkbox" class="inquiry-favorite-details" id="checkbox-2-2">爆笑問題カーボーイ</label></li>
+                    <li><label for="checkbox-2-3"><input type="checkbox" class="inquiry-favorite-details" id="checkbox-2-3">おぎやはぎのメガネびいき</label></li>
+                    <li><label for="checkbox-2-4"><input type="checkbox" class="inquiry-favorite-details" id="checkbox-2-4">エレ片のコント太郎</label></li>            
+                    <li><label for="checkbox-2-5"><input type="checkbox" class="inquiry-favorite-details" id="checkbox-2-5">東京ポッド許可局</label></li> 
+                    <li><label for="checkbox-2-6"><input type="checkbox" class="inquiry-favorite-details" id="checkbox-2-6">うしろシティ 星のギガボディ</label></li> 
+                  </ul>
+                  <!-- -----------TBS ラジオ------------------------------------------------------------------------------------------------------------------------ -->
+
+
+
+                  <label for="inquiry-menu_bar03" class="each-channel">JFN</label>
+                  <input type="checkbox" id="inquiry-menu_bar03" class="accordion" />
+                  <ul id="inquiry-links03">
+                    <li><label for="checkbox-3-1"><input type="checkbox" class="inquiry-favorite-details" id="checkbox-3-1">有吉弘行のSND</label></li>
+                  </ul>
+
+
+                  <label for="inquiry-menu_bar04" class="each-channel">TOKYO FM</label>
+                  <input type="checkbox" id="inquiry-menu_bar04" class="accordion" />
+                  <ul id="inquiry-links04">
+                    <li><label for="checkbox-4-1"><input type="checkbox" class="inquiry-favorite-details" id="checkbox-4-1">SHOWROOM主義</label></li>
+                  </ul>
+
+
+                  <label for="inquiry-menu_bar05" class="each-channel">MBS</label>
+                  <input type="checkbox" id="inquiry-menu_bar05" class="accordion" />
+                  <ul id="inquiry-links05">
+                    <li><label for="checkbox-5-1"><input type="checkbox" class="inquiry-favorite-details" id="checkbox-5-1">小藪・笑い飯の土020</label></li>
+                  </ul>
+                  
+                </ul>
+
+              </td>
+            </tr>
+            <tr>
+              <th id="inquiry-cell7_1" class="form-cell-left">詳細</th>
+              <td class="form-cell-right"><textarea name="text" id="text" cols="22" rows="8"></textarea></td>
+            </tr>
+
+            <tr><th colspan="2">
+              <button type="button" class="submit" value="送信">送信</button>
+            </th></tr>
+          </table>
+          
+
+        </form>
+      </div>
+
+
+    
+    </main>
+    <!-- ↑メインのコンテンツを記述 -->
+
+
+    <!-- ↓サイドバーとなるコンテンツを記述 -->
+    <!-- https://codepen.io/takanorip/pen/grZpOp -->
+    <aside class="aside-wrapper">
+      
+      <!-- section s_01 はアコーディオン用jQueryクラス -->
+      <div class="side-menu sticky section s_01">
+
+        <label for="side-menu_bar01">ニッポン放送</label>
+        <input type="checkbox" id="side-menu_bar01" class="accordion" />
+        <ul id="links01">
+            <li><a href="#main-third">オードリー ANN</a></li>
+            <li><a href="#main-third">三四郎 ANN</a></li>
+            <li><a href="#main-third">水溜りボンド ANN</a></li>
+            <li><a href="#main-third">佐久間宣行 ANN0</a></li>
+            <li><a href="#main-third">クリーピーナッツ ANN0</a></li>
+        </ul>
+
+        <label for="side-menu_bar02">TBSラジオ</label>
+        <input type="checkbox" id="side-menu_bar02" class="accordion" />
+        <ul id="links02">
+            <li><a href="#main-third">伊集院光の深夜の馬鹿力</a></li>
+            <li><a href="#main-third">爆笑問題カーボーイ</a></li>
+            <li><a href="#main-third">おぎやはぎのメガネびいき</a></li>
+            <li><a href="#main-third">エレ片のコント太郎</a></li>
+            <li><a href="#main-third">東京ポッド許可局</a></li>
+            <li><a href="#main-third">うしろシティ 星のギガボディ</a></li>
+        </ul>
+
+        <label for="side-menu_bar03">JFN</label>
+        <input type="checkbox" id="side-menu_bar03" class="accordion" />
+        <ul id="links03">
+            <li><a href="#other">有吉弘行のSND</a></li>
+        </ul>
+
+        <label for="side-menu_bar04">TOKYO FM</label>
+        <input type="checkbox" id="side-menu_bar04" class="accordion" />
+        <ul id="links04">
+            <li><a href="#other">SHOWROOM主義</a></li>
+        </ul>
+
+        <label for="side-menu_bar05">MBS</label>
+        <input type="checkbox" id="side-menu_bar05" class="accordion" />
+        <ul id="links05">
+            <li><a href="#other">小藪・笑い飯の土020</a></li>
+        </ul>
+    </div>
+
+
+
+    </aside>
+    <!-- ↑サイドバーとなるコンテンツを記述 -->
+
+  </div>
+  
+  <!-- ↓フッターの内容を記述 -->
+  <footer class="footer-wrapper">
+    <div></div>
+    <p><small>&copy;</small>2020 Tatsuya.M at G's Academy Tokyo</p>
+    <div class="to-pagetop"><a href="#bgi"><img src="img/page-tpo.png" alt=""></a></div>
+  </footer>
+  <!-- ↑フッターの内容を記述 -->
+  <br>
+
+
+  <!-- ここから上にコードを書く -->
+  <!-- この中に記述していく -->
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/main.js"></script> -->
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    headタグ内にjsファイルを読み込むコードを書いていると読み込み速度がクソ遅くなる可能性がある .
+    なので、bodyタグを閉じる直前に記述する方が望ましい
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <!-- jQuery を先に読み込む(先に読み込まないと使えない！) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- slick.js　(スライドショー用のjsファイル)　を次に読み取る -->
+    <script src="js/slick.js"></script>
+    <script src="js/accordion-custom01.js"></script>
+    <!-- js/app.jsを後に読み込む -->
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
